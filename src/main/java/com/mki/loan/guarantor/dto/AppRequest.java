@@ -1,5 +1,7 @@
 package com.mki.loan.guarantor.dto;
 
+import java.util.Map;
+
 public class AppRequest {
     private String appId;
     private String name;
@@ -14,6 +16,14 @@ public class AppRequest {
     private String type;
     private String msisdn;
     private String msisdnGuarantor;
+    private String paymentTransactionId;
+    private String paymentTimestamp;
+    private String paymentAmount;
+    private String loanTrxId;
+    private String loanTimestamp;
+    private String loanAmount;
+    private Float outstanding;
+    private Map<String, Object> others;
 
     public String getAppId() {
         return appId;
@@ -117,5 +127,69 @@ public class AppRequest {
 
     public void setMsisdnGuarantor(String msisdnGuarantor) {
         this.msisdnGuarantor = msisdnGuarantor;
+    }
+
+    public String getPaymentTransactionId() {
+        return paymentTransactionId;
+    }
+
+    public void setPaymentTransactionId(String paymentTransactionId) {
+        this.paymentTransactionId = paymentTransactionId;
+    }
+
+    public String getPaymentTimestamp() {
+        return paymentTimestamp;
+    }
+
+    public void setPaymentTimestamp(String paymentTimestamp) {
+        this.paymentTimestamp = paymentTimestamp;
+    }
+
+    public String getPaymentAmount() {
+        return paymentAmount;
+    }
+
+    public void setPaymentAmount(String paymentAmount) {
+        this.paymentAmount = paymentAmount;
+    }
+
+    public String getLoanTrxId() {
+        return loanTrxId;
+    }
+
+    public void setLoanTrxId(String loanTrxId) {
+        this.loanTrxId = loanTrxId;
+    }
+
+    public String getLoanTimestamp() {
+        return loanTimestamp;
+    }
+
+    public void setLoanTimestamp(String loanTimestamp) {
+        this.loanTimestamp = loanTimestamp;
+    }
+
+    public String getLoanAmount() {
+        return loanAmount;
+    }
+
+    public void setLoanAmount(String loanAmount) {
+        this.loanAmount = loanAmount;
+    }
+
+    public Float getOutstanding() {
+        return outstanding;
+    }
+
+    public void setOutstanding(Float outstanding) {
+        this.outstanding = outstanding;
+    }
+
+    public Map<String, Object> getOthers() {
+        return others;
+    }
+
+    public void setOthers(Map<String, Object> others) {
+        this.others = others;
     }
 }
